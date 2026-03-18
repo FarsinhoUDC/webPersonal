@@ -14,13 +14,13 @@ window.addEventListener('DOMContentLoaded', event => {
         text: "Juan Pablo Medina Bolanios", 
         chars: "010", 
         revealDelay: 1, 
-        speed: 0.2 
+        speed: 0.2 ,
         },
         onComplete: () => {
         // Esta arranca cuando termina el scramble
         gsap.to("#myName", {
             duration: 2,
-            opacity: 0.7,
+            opacity: 0.44,
             yoyo: true,        // regresa al estado original
             repeat: -1         // -1 = infinito
         });
