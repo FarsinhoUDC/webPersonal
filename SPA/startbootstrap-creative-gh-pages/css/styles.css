@@ -99,7 +99,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  /*background-color: var(--bs-body-bg); */
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2020,7 +2020,7 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #212529;
+  color: #0f1113;
   background-color: #fff;
   border-color: #fab19d;
   outline: 0;
@@ -2030,11 +2030,11 @@ progress {
   height: 1.5em;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #070707;
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #000000;
   opacity: 1;
 }
 .form-control:disabled {
@@ -2433,6 +2433,7 @@ textarea.form-control-lg {
   height: 100%;
   padding: 1rem 0.75rem;
   overflow: hidden;
+  color: #212529;
   text-align: start;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -10865,52 +10866,25 @@ body {
 .page-section {
   padding: 8rem 0;
 }
-#aboutMeSec{
-  background: linear-gradient(
-    to bottom, 
-    rgba(0, 0, 0, 0.8) 0%, 
-    rgba(0, 0, 0, 0.8) 100%
-), url("../assets/img/bg-aboutMe.jpg");
- background-repeat: no-repeat;
- background-size: cover;
-}
-
-#Estudios{
-  background: linear-gradient(
-    to bottom, 
-    rgba(0, 0, 0, 0.8) 0%, 
-    rgba(0, 0, 0, 0.8) 100%
-), url("../assets/img/bg-estudios.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#pasatiempos{
-  background: linear-gradient(
-    to bottom, 
-    rgba(0, 0, 0, 0.8) 0%, 
-    rgba(0, 0, 0, 0.8) 100%
-), url("../assets/img/pasatiempos.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#project{
+#aboutMeSec , #Estudios , #project, #pasatiempos, #contact{
   background: linear-gradient(
     to bottom, 
     rgba(0, 0, 0, 0.8) 0%, 
     rgba(0, 0, 0, 0.8) 100%
 ), url("../assets/img/bg-1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* efecto continuo */
+   background-repeat: no-repeat;
 }
+
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
-
 .btn-xl {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;

@@ -75,3 +75,57 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let isValid = true;
+
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+    const message = document.getElementById("message");
+
+    // Reset estados
+    [name, email, phone, message].forEach(input => {
+        input.classList.remove("is-invalid");
+    });
+
+    // Validación nombre
+    if (name.value.trim() === "") {
+        name.classList.add("is-invalid");
+        isValid = false;
+    }
+
+    // Validación email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value)) {
+        email.classList.add("is-invalid");
+        isValid = false;
+    }
+
+    // Validación teléfono
+    if (phone.value.trim().length < 7) {
+        phone.classList.add("is-invalid");
+        isValid = false;
+    }
+
+    // Validación mensaje
+    if (message.value.trim() === "") {
+        message.classList.add("is-invalid");
+        isValid = false;
+    }
+
+    // Mostrar resultado
+    if (isValid) {
+        document.getElementById("submitSuccessMessage").classList.remove("d-none");
+        document.getElementById("submitErrorMessage").classList.add("d-none");
+        form.reset();
+    } else {
+        document.getElementById("submitErrorMessage").classList.remove("d-none");
+        document.getElementById("submitSuccessMessage").classList.add("d-none");
+    }
+});
+
