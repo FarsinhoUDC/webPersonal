@@ -10872,7 +10872,6 @@ html {
 .page-section {
   padding: 8rem 0;
 }
-<<<<<<< Updated upstream
 #aboutMeSec , #Estudios , #project, #pasatiempos, #contact{
   background: linear-gradient(
     to bottom, 
@@ -10888,8 +10887,6 @@ html {
    background-repeat: no-repeat;
 }
 
-=======
->>>>>>> Stashed changes
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
@@ -11049,46 +11046,3 @@ header.masthead h1, header.masthead .h1 {
   opacity: 1;
 }
 
-
-#aboutMeSec{
-  background: linear-gradient(
-    to bottom, 
-    rgba(0, 0, 0, 0.8) 0%, 
-    rgba(0, 0, 0, 0.8) 100%
-), url("../assets/img/bg-aboutMe.jpg");
- background-repeat: no-repeat;
- background-size: cover;
-}
-
-#Estudios{
-  background: linear-gradient(
-    to bottom, 
-    rgba(0, 0, 0, 0.8) 0%, 
-    rgba(0, 0, 0, 0.8) 100%
-), url("../assets/img/bg-1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#pasatiempos{
-  background: linear-gradient(
-    to bottom, 
-    rgba(0, 0, 0, 0.8) 0%, 
-    rgba(0, 0, 0, 0.8) 100%
-), url("../assets/img/pasatiempos.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#project{
-  background: linear-gradient(
-    to bottom, 
-    rgba(0, 0, 0, 0.8) 0%, 
-    rgba(0, 0, 0, 0.8) 100%
-), url("../assets/img/bg-1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
