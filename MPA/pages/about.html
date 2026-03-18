@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Curriculum Vitae - Juan Pablo Medina" />
+        <title>Juan Medina - Acerca de mi</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <header class="masthead">
+            <div id="navegacionTitulo">
+                <nav class="barraNav" id="mainNav">
+                    <div class="nav-inner">
+                        <ul class="nav-links">
+                            <li><a href="..\index.html">Inicio</a></li>
+                            <li><a href="about.html">Acerca de mí</a></li>
+                            <li><a href="estudios.html">Estudios</a></li>
+                            <li><a href="pasatiempos.html">Mis Hobbies</a></li>
+                            <li><a href="proyectos.html">Proyectos</a></li>
+                            <li><a href="contacto.html">Contáctame</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="about-content">
+                <h2>Acerca de mi</h2>
+                <p>
+                    21 años <br>
+                    Nacido el 26/03/2005
+                </p>
+                <p>
+                    Mis expectativas como profesional están enfocadas en el crecimiento continuo y la adaptación a los cambios tecnológicos. 
+                    Aspiro a fortalecer mis habilidades en desarrollo de software y resolución de problemas, aportando soluciones innovadoras. 
+                    Espero trabajar en equipo, aprender de otros profesionales y participar en proyectos que generen impacto. A largo plazo, 
+                    busco consolidarme como un profesional competente, ético y comprometido, capaz de contribuir al desarrollo tecnológico y alcanzar estabilidad y satisfacción en mi carrera.
+                </p>
+                <div class="mi-carrusel" id="carouselMe">
+                    <div class="mi-carrusel-track">
+                        <img src="../assets/img/me1.jpg" alt="Primera Imagen">
+                        <img src="../assets/img/me3.jpg" alt="Segunda Imagen">
+                        <img src="../assets/img/me4.jpg" alt="Tercera Imagen">
+                    </div>
+                    <button class="mi-carrusel-btn prev" onclick="moverCarrusel('carouselMe', -1)">&#8249;</button>
+                    <button class="mi-carrusel-btn next" onclick="moverCarrusel('carouselMe', 1)">&#8250;</button>
+                </div>
+        </div>
+    
+
+    <footer>
+        <div>
+        <p>Copyright &copy; 2026 &mdash; Universidad Del Cauca</p>
+        </div>
+    </footer>
+     <script src="..\js\scripts.js"></script>
+    </body>
+</html>
