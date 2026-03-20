@@ -3,9 +3,9 @@ body{
 }
 
 .masthead-content{
-  height: 100vh;        /* 100% del alto del navegador */
-  width: 100%;          /* 100% del ancho */
-  min-height: 100vh;    /* por si el contenido es más alto */
+  height: 100vh;        
+  width: 100%;         
+  min-height: 100vh;   
   background: linear-gradient(
       to bottom, 
       rgba(0, 0, 0, 0.8) 0%, 
@@ -21,9 +21,9 @@ body{
 }
 
 .about-content{
-  height: 100vh;        /* 100% del alto del navegador */
-  width: 100%;          /* 100% del ancho */
-  min-height: 100vh;    /* por si el contenido es más alto */
+  height: 100vh;       
+  width: 100%;          
+  min-height: 100vh;    
   background: linear-gradient(
       to bottom, 
       rgba(0, 0, 0, 0.8) 0%, 
@@ -37,7 +37,130 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.about-content h2{
+.hobbies-content{
+  width: 100%;         
+  min-height: 100vh;    
+  background: linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0.8) 0%, 
+      rgba(0, 0, 0, 0.8) 100%
+  ), url("../assets/img/bg-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.proyectos-content{
+  width: 100%;          
+  min-height: 100vh;    
+  background: linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0.8) 0%, 
+      rgba(0, 0, 0, 0.8) 100%
+  ), url("../assets/img/bg-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.contacto-content{
+  width: 100%;          
+  min-height: 100vh;    
+  background: linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0.8) 0%, 
+      rgba(0, 0, 0, 0.8) 100%
+  ), url("../assets/img/bg-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.gridProjects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto; 
+}
+
+.card{
+  text-align: center;
+  color: seashell;
+  background-color: rgba(108, 117, 125, 0.25);
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.card h5{
+  font-size: 1.2vw;
+  border-bottom:1px solid azure;
+}
+
+.card-footer a {
+    font-size: 0.9rem;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+}
+
+.card-footer a:hover {
+    background-color: white;
+    color: black;
+}
+
+.card-footer{
+  margin-top: 15px;
+  border-top:1px solid azure;
+  padding-top: 15px;
+}
+
+.badge {
+    background-color: #0d6efd; 
+    color: white;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+
+
+
+.about-content h2, .hobbies-content h2, .proyectos-content h2, .contacto-content h2{
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   color: seashell;
@@ -45,6 +168,7 @@ body{
   margin: 0;
   padding-bottom: 25px;
 }
+
 .about-content p{
   text-align: center;
   color: seashell;
@@ -52,6 +176,14 @@ body{
   font-size: large;
   text-wrap: balance;
 }
+
+ .hobbies-content p{
+  text-align: center;
+  color: seashell;
+  margin: 0;
+  font-size: 1.5vw;
+  text-wrap: balance;
+ }
 
 .mi-carrusel {
   position: relative;
@@ -139,4 +271,167 @@ ul li a {
 
 ul li a:hover {
   background-color: #111111;
+}
+
+.tablaEstudios{
+  color: seashell;
+  text-align: center;
+  border-collapse: separate;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.tablaEstudios th {
+  background-color: #333; 
+  padding: 12px 16px;
+  border: 1px solid #555;          
+}
+.tablaEstudios td {
+  background-color: #1a1a1a;
+  padding: 12px 16px;
+  border: 1px solid #555;         
+}
+
+.gridCalistenia, .gridMusica{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.gridVideojuegos{
+  display: grid;
+  grid-template-columns:40% 60% ;
+}
+
+#steamAccount{
+  max-width: 420px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  border-radius: 8px;
+  display: block;
+  margin-top: 50px;
+}
+
+#steamAccount:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(102, 192, 244, 0.6);
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+
+.formContact {
+    width: 100%;
+    max-width: 550px;
+}
+
+
+.campo-flotante {
+    position: relative;       
+    margin-bottom: 20px;
+}
+
+.campo-input {
+    width: 100%;
+    padding: 20px 14px 8px 14px; 
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    color: seashell;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.campo-input.invalido {
+    border-color: #dc3545;
+}
+
+.campo-textarea {
+    height: 10rem;
+    resize: vertical; 
+}
+
+.campo-label {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem;
+    pointer-events: none; 
+    transition: top 0.2s, font-size 0.2s, color 0.2s;
+}
+
+.campo-flotante:has(.campo-textarea) .campo-label {
+    top: 18px;
+}
+
+
+.campo-input:focus + .campo-label,
+.campo-input:not(:placeholder-shown) + .campo-label {
+    top: 6px;
+    transform: none;
+    font-size: 0.72rem;
+    color: #0d6efd;
+}
+
+.campo-error {
+    display: none;          
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+
+.campo-input.invalido ~ .campo-error {
+    display: block;
+}
+
+
+.oculto {
+    display: none;   
+}
+
+.mensaje-exito {
+    text-align: center;
+    color: #28a745;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.mensaje-error {
+    text-align: center;
+    color: #dc3545;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-enviar:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-enviar:active {
+    transform: scale(0.98); 
+}
+
+.contacto-telefono {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.contacto-telefono p {
+    margin: 4px 0 0 0;
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Curriculum Vitae - Juan Pablo Medina" />
+        <title>Juan Medina - Hobbies</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <header class="masthead">
+            <div id="navegacionTitulo">
+                <nav class="barraNav" id="mainNav">
+                    <div class="nav-inner">
+                        <ul class="nav-links">
+                            <li><a href="..\index.html">Inicio</a></li>
+                            <li><a href="about.html">Acerca de mí</a></li>
+                            <li><a href="estudios.html">Estudios</a></li>
+                            <li><a href="pasatiempos.html">Mis Hobbies</a></li>
+                            <li><a href="proyectos.html">Proyectos</a></li>
+                            <li><a href="contacto.html">Contáctame</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="hobbies-content">
+            <h2 style="padding-top: 40px;">Mis hobbies</h2>
+            <div class="gridCalistenia">
+                <div class="mi-carrusel" id="carouselCalistenia">
+                    <div class="mi-carrusel-track">
+                        <img src="../assets/img/me2.jpg" alt="Primera Imagen">
+                        <img src="../assets/img/calistenia.jpg" alt="Segunda Imagen">
+                        <img src="../assets/img/calistenia2.jpg" alt="Tercera Imagen">
+                    </div>
+                    <button class="mi-carrusel-btn prev" onclick="moverCarrusel('carouselCalistenia', -1)">&#8249;</button>
+                    <button class="mi-carrusel-btn next" onclick="moverCarrusel('carouselCalistenia', 1)">&#8250;</button>
+                </div>
+                <div style="display: flex ; justify-content: center; align-items: center; padding-right: 40px;">
+                    <p>
+                        Soy un atleta de nivel avanzado en calistenia. A través de esta disciplina, he desarrollado diversas actitudes y aptitudes que han contribuido positivamente a mi crecimiento tanto personal como deportivo. 
+                        Me especializo principalmente en la rama de movimientos estáticos y en street lifting, áreas en las que he encontrado un lugar propio y seguro.
+                    </p>
+                </div>
+            </div> 
+            <div class="gridVideojuegos">
+                <div style="display: flex;  flex-direction: column ; justify-content: center; align-items: center; padding-left: 100px; font-size: large">
+                    <p>
+                        Soy un apasionado de los videojuegos y la cultura geek. Desde muy pequeño he estado vinculado al mundo del gaming y el anime, lo que ha influido en mis gustos e intereses. 
+                        Disfruto de todo tipo de géneros, aunque tengo una mayor preferencia por los juegos single player y los títulos independientes. Actualmente, mi anime favorito es One Piece.
+                    </p>
+                    <a href="https://steamcommunity.com/id/FarVision" target="_blank">
+                            <img src="../assets/img/steamAccount.jpg" id="steamAccount">
+                    </a>
+                </div>
+                <div class="mi-carrusel" id="carouselVideojuegos" style="max-width: 800px;">
+                    <div class="mi-carrusel-track">
+                        <img src="../assets/img/ju.jpg" alt="Primera Imagen">
+                        <img src="../assets/img/ju2.jpg" alt="Segunda Imagen">
+                        <img src="../assets/img/ju3.jpg" alt="Tercera Imagen">
+                        <img src="../assets/img/ju4.jpg" alt="Cuarta Imagen">
+                        <img src="../assets/img/ju5.jpg" alt="Quinta Imagen">
+                        <img src="../assets/img/ju6.jpg" alt="Sexta Imagen">
+                        <img src="../assets/img/ju7.jpg" alt="Septima Imagen">
+                        <img src="../assets/img/ju8.jpg" alt="Octava Imagen">
+                        <img src="../assets/img/ju.9.jpg" alt="Novena Imagen">
+                        <img src="../assets/img/ju10.jpg" alt="Decima Imagen">
+                        <img src="../assets/img/ju11.jpg" alt="Onceava Imagen">
+                    </div>
+                    <button class="mi-carrusel-btn prev" onclick="moverCarrusel('carouselVideojuegos', -1)">&#8249;</button>
+                    <button class="mi-carrusel-btn next" onclick="moverCarrusel('carouselVideojuegos', 1)">&#8250;</button>
+                </div>
+                
+            </div>
+            <div class="gridMusica">
+                <div class="mi-carrusel" id="carrouselMusica" style="margin-bottom: 60px;">
+                    <div class="mi-carrusel-track">
+                        <img src="../assets/img/music.jpg" alt="Primera Imagen">
+                        <img src="../assets/img/music2.jpg" alt="Segunda Imagen">
+                    </div>
+                    <button class="mi-carrusel-btn prev" onclick="moverCarrusel('carrouselMusica', -1)">&#8249;</button>
+                    <button class="mi-carrusel-btn next" onclick="moverCarrusel('carrouselMusica', 1)">&#8250;</button>
+                </div>
+                <div style="display: flex ; text-wrap : balance ;justify-content: center; align-items: center; padding-right: 80px; font-size: large">
+                    <p>
+                        Me apasiona la música y tocar guitarra. En mi tiempo libre, suelo reunirme con mis amigos para interpretar canciones o aprender nuevas piezas que nos gustan. 
+                        He tenido la oportunidad de participar en diferentes eventos, principalmente tocando géneros como indie y rock en español. <br>
+                        Aunque disfruto de una gran variedad de estilos musicales, mis géneros favoritos son el screamo, el rap colombiano y el rock progresivo.
+                    </p>
+                </div>
+            </div>  
+        </div>
+    
+
+    <footer>
+        <div>
+        <p>Copyright &copy; 2026 &mdash; Universidad Del Cauca</p>
+        </div>
+    </footer>
+     <script src="..\js\scripts.js"></script>
+    </body>
+</html>

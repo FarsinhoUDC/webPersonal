@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', event => {
         track.style.transform = `translateX(-${estadoCarruseles[id] * 100}%)`;
   }
 
-/*
+
 const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", function (e) {
@@ -88,5 +88,3 @@ form.addEventListener("submit", function (e) {
         document.getElementById("submitSuccessMessage").classList.add("d-none");
     }
 });
-}
-*/
