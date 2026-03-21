@@ -50,8 +50,8 @@ Sitio web personal desarrollado como portafolio y currículum vitae en línea. E
 
 Ambas versiones incluyen las mismas secciones:
 
-| Sección        |    Descripción |
-|---------------------------------|
+| Sección | Descripción |
+| --- | --- |
 | Inicio | Presentación principal |
 | Acerca de mí | Información personal |
 | Estudios | Formación académica |
